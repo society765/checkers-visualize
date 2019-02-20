@@ -6,7 +6,9 @@ The original `js` repo was written by **codethejason**, and I "borrowed" this `j
 repo as a checkers front-end to play with my `C++` back-end bot in 
 [checkers](https://github.com/society765/bot-build/tree/master/checkers-cpp/). 
 
-As I added the compatibility for the communication with my `C++` back-end, I also fixed several bugs for this repo. Most of them are related to the rules of checkers. 
+As I was adding the compatibility for the communication with my `C++` back-end 
+(using [dlib](https://github.com/davisking/dlib) for networking), 
+I also fixed several bugs for this repo. Most of them are related to the rules of checkers. 
 
 The below part of the README is from the original author. Many thanks! 
 
