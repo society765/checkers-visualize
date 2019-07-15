@@ -10,7 +10,7 @@ As I was adding the compatibility for the communication with my `C++` back-end
 (using [dlib](https://github.com/davisking/dlib) for networking), 
 I also fixed several bugs for this repo. Most of them are related to the rules of checkers. 
 
-You may visit my demo [here](https://society765.github.io/checkers-visualize/). 
+You may visit my demo [HERE](https://society765.github.io/checkers-visualize/). 
 
 The below part of the README is from the original author. Many thanks! 
 
@@ -21,7 +21,3 @@ Play by selecting your piece and clicking on the tile you want to move to. Click
 The code supports all the features of checkers including kingship and double/triple/quadruple jumping. The Board object controls the board and therefore the game. The pieces and tiles instances are used in the game for checking whether a piece can be moved, moving a piece, deleting a piece, checking whether tile is in range, and much more. The script is fully commented and original.
 
 If you find any bugs, please make a Pull Request or an Issue.
-
-
-## Live Demo
-[DEMO](http://codethejason.github.io/checkers/index.html)
