@@ -256,12 +256,13 @@ window.onload = function() {
       if(aiplayer == 1) ret += 'b'
       else if (aiplayer == 2) ret += 'w'
 
-      console.log(ret)
+      // console.log(ret)
       var xhr = new XMLHttpRequest();
       var url = "http://localhost:22345/reqstr"
+      // var url = "/checkers/reqstr"
       xhr.open("POST", url, true);
       //xhr.setRequestHeader("Content-Type", "text/plain");
-      xhr.setRequestHeader("Content-Type", "text/json");
+      xhr.setRequestHeader("Content-Type", "application/json");
 
       var tempthis = this
       xhr.onreadystatechange = function () {
@@ -284,7 +285,7 @@ window.onload = function() {
       for(a_move of movejson["mov"]){
         origin = a_move[0] 
         dest = a_move[1]
-        console.log("from ", origin, " to ", dest)
+        // console.log("from ", origin, " to ", dest)
         var piece_origin 
         var tile_dest
         for(k of pieces){
