@@ -260,7 +260,8 @@ window.onload = function() {
       var xhr = new XMLHttpRequest();
       var url = "http://localhost:22345/reqstr"
       xhr.open("POST", url, true);
-      xhr.setRequestHeader("Content-Type", "text/plain");
+      //xhr.setRequestHeader("Content-Type", "text/plain");
+      xhr.setRequestHeader("Content-Type", "text/json");
 
       var tempthis = this
       xhr.onreadystatechange = function () {
@@ -277,7 +278,7 @@ window.onload = function() {
           tempthis.move_with_json(movejson)
         }
       };
-      xhr.send(ret);
+      xhr.send(JSON.stringify({'board': ret}));
     }, 
     move_with_json:function(movejson){
       for(a_move of movejson["mov"]){

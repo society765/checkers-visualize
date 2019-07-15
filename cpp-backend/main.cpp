@@ -4,7 +4,9 @@
 #include <string>
 
 #include "checkers-dylib.h"
+#include "json.hpp"
 
+using json = nlohmann::json;
 using namespace dlib;
 using namespace std;
 
@@ -36,7 +38,13 @@ class web_server : public server_http {
 
         // cout << incoming.body << endl;
 
-        string str = incoming.body;
+        string js_str = incoming.body;
+        json js = json::parse(js_str); 
+        string str = js["board"]; 
+
+        // std::cout << js_str << std::endl; 
+        // std::cout << str << std::endl; 
+
         char player = str.back();
         // str.pop_back();
         for (auto& i : str) {
