@@ -10,7 +10,7 @@ As I was adding the compatibility for the communication with my `C++` back-end
 (using [dlib](https://github.com/davisking/dlib) for networking), 
 I also fixed several bugs for this repo. Most of them are related to the rules of checkers. 
 
-You may visit my demo [HERE](https://society765.github.io/checkers-visualize/). 
+You may visit a static live demo [HERE](https://society765.github.io/checkers-visualize/). 
 
 The below part of the README is from the original author. Many thanks! 
 
