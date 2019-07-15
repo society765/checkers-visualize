@@ -43,16 +43,26 @@ div.column {
     height: auto; } }
 div.info, div.stats {
   width: 70%;
-  margin: 15vmin auto 0;
+  margin: 4vmin auto 0;
   box-sizing: border-box;
-  padding: 20px 30px;
+  padding: 15px 30px;
+  background-color: #F1F1FF;
+  color: #3A3042;
+  border-radius: 3px;
+  box-shadow: 1px 1px 3px #232621; }
+
+div.log {
+  width: 70%;
+  margin: 4vmin auto 0;
+  box-sizing: border-box;
+  padding: 15px 30px;
   background-color: #F1F1FF;
   color: #3A3042;
   border-radius: 3px;
   box-shadow: 1px 1px 3px #232621; }
 
 div.stats {
-  margin: 50px auto !important; }
+  margin: 30px auto !important; }
   div.stats .wrapper {
     display: flex; }
   div.stats #player1 {

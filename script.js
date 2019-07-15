@@ -264,12 +264,15 @@ window.onload = function() {
 
       var tempthis = this
       xhr.onreadystatechange = function () {
+        document.getElementById('backend-log').innerText = 
+          "waiting for backend response"
         if (this.readyState != 4) return;
 
         if (this.status == 200) {
           //var data = JSON.parse(this.responseText)
           var moveret = this.responseText
           console.log(moveret)
+          document.getElementById('backend-log').innerText = moveret
           movejson = JSON.parse(moveret)
           tempthis.move_with_json(movejson)
         }
@@ -327,10 +330,16 @@ window.onload = function() {
       }
     } else {
       if(isPlayersTurn) {
-        if(!Board.continuousjump)
-          console.log("jump exist for other pieces, that piece is not allowed to move")
-        else 
-          console.log("continuous jump exist, you have to jump the same piece")
+        if(!Board.continuousjump){
+          var logtext = "jump exist for other pieces, that piece is not allowed to move"
+          console.log(logtext)
+          document.getElementById('backend-log').innerText = logtext
+        }
+        else {
+          var logtext = "continuous jump exist, you have to jump the same piece"
+          console.log(logtext)
+          document.getElementById('backend-log').innerText = logtext
+        }
       }
     }
   });
